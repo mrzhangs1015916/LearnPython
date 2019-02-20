@@ -255,6 +255,19 @@ def test():
 print(test)
 print(test())
 
+# from .toolUtil import testCalculate
+import os
+from os.path import isdir
+import toolUtil
+print(toolUtil.testCalculate(1,2))
+import sys
+print(sys.path)
+from toolUtil import testCalculate
+from secondDay.secondCal import secondCalculate
+print(secondCalculate(1,2))
+import importlib
+importlib.reload(sys)
+
 
 
 
